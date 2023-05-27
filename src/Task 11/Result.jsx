@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
-import { UserContext } from "./FormMultiStep";
+import React, { useContext } from "react";
+import { UserContext } from "./UserContext";
 
 const Result = () => {
-  const user = useContext(UserContext);
-
+  const { user } = useContext(UserContext);
   return (
     <div>
       <h1>Selamat Datang {user.nama}</h1>
